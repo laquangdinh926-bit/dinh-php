@@ -1,0 +1,80 @@
+/* 1. Import font chữ đẹp từ Google (Be Vietnam Pro) */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+/* 2. Thiết lập font chữ và màu nền chung */
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #f4f7f6; /* Một màu nền xám-xanh nhẹ, dễ chịu */
+    color: #333;
+}
+
+/* 3. "Nâng cấp" các card, form, table */
+.card, 
+.table, 
+form.mb-4, /* Form thêm công việc */
+.container > .d-flex /* Khối header chào mừng */
+{
+    border: none; /* Bỏ viền (border) mặc định */
+    border-radius: 12px; /* Bo góc mềm mại hơn (mặc định là 6px) */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07); /* Thêm bóng mờ (shadow) hiện đại */
+    background-color: #ffffff;
+}
+
+/* 4. Thêm padding cho các khối để "dễ thở" hơn */
+form.mb-4,
+.container > .d-flex {
+    padding: 24px;
+}
+
+/* 5. Header của bảng (table) */
+.table thead th {
+    background-color: #f8f9fa; /* Màu nền cho header */
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 700; /* In đậm chữ */
+    color: #555;
+    text-transform: uppercase; /* Viết hoa */
+    font-size: 0.9rem;
+}
+
+/* 6. Nút bấm (buttons) */
+.btn {
+    border-radius: 8px; /* Bo góc cho nút */
+    font-weight: 500;
+    transition: all 0.2s ease-in-out; /* Hiệu ứng chuyển động mượt */
+    padding: 10px 20px; /* Tăng kích thước nút */
+    border: none;
+}
+
+/* 7. Hiệu ứng "nhấc" lên khi di chuột vào nút */
+.btn:hover {
+    transform: translateY(-3px); /* Nhấc nút lên 1 chút */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Thêm bóng mờ khi hover */
+}
+
+.btn-primary:hover {
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+.btn-success:hover {
+    box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+}
+.btn-danger:hover {
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+}
+.btn-warning:hover {
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
+/* 8. Tách khối header chào mừng ra riêng */
+.container > .d-flex {
+    margin-bottom: 2rem !important;
+}
+
+/* 9. Làm cho form đăng nhập/đăng ký đẹp hơn */
+.form-login-register {
+    max-width: 450px;
+    margin: 5rem auto; /* Tự động căn giữa */
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
